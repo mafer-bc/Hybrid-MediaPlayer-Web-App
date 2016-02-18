@@ -1,0 +1,166 @@
+/*
+ * CSS Styles for VFS Demo App
+ *
+ * Copyright 2014-2015, Vancouver Film School
+ *
+ */
+body, div {
+	margin: 0;
+	border: none;
+	color: #000;
+	position: relative;
+	
+	/* iOS */
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	
+	/* note apple’s support for this extends to custom types */
+	font: -apple-system-body;
+	font: -apple-system-headline
+	
+	/* Android */
+	font-family: 'RobotoRegular', 'Droid Sans', sans-serif;
+	
+	/* Windows Phone */
+	font-family: 'Segoe UI', Segoe, Tahoma, Geneva, sans-serif;
+		
+}
+
+.share-ios {
+	width: 50px;
+	color: white;
+	background-size: 20px;
+	height: 50px;
+	display: none;
+  	top: 20px;
+}
+
+#title {
+	/* width: 60px; */
+	height: 4em;
+	/* background-image:url("../images/crate1.jpg"); */
+	background-size: 100% 100%;
+	background-color: white;
+	margin: 0.5em;
+	padding: 0.25em 2em;
+}
+
+.song-area{
+	background-color: #f8f5f0;
+	height:300px;
+	border-radius:6px;
+	background: url(../images/default.png) no-repeat center;
+	background-size: 295px 300px;
+}
+
+.song-title{
+	background-color: #81b33a;
+	opacity: 0.8;
+	height: 15%;
+    border-radius: 6px;
+	text-align: center;
+	font-size: 2em;
+	color: white;
+}
+
+.song-image{
+	margin:0 auto;
+	height:300px;
+	width:50%;
+	text-align: center;
+	background: url(../images/demo.jpg);
+	background-size: 100%;  
+}
+
+.controlls-area {
+	padding-top: 11px;
+	text-align: center;
+	width:100%;
+	height:75px;
+	background-color: #3e3f3a;
+	border-radius:6px;
+}
+
+.controlls {
+	margin: 0 10px;
+	display: inline-block;
+	color:#81b33a;
+	cursor:pointer;	
+	opacity:0.7;
+}
+.controlls:hover{
+	opacity:1;
+}
+
+.volume {
+	position: absolute;
+	bottom:0;
+	left:95%;
+	color:#3e3f3a;
+	opacity:0.7;
+}
+.volume:hover{
+	opacity:1;
+}
+@media (min-width: 400px) {
+	.volume{
+		left:90%;
+	}
+}
+@media (min-width: 768px) {
+	.volume {
+		left:93%;
+	}
+}
+
+.playlist{
+	margin:0 auto;
+	
+	/*width:49%;
+	display: inline-block; 	 
+  	vertical-align: top;*/
+}
+@media (min-width: 768px) {
+  .playlist {
+    width: 100%;
+  }
+}
+@media (min-width: 1030px) {
+  .playlist {
+    width: 49%;
+  }
+}
+
+.playlist > .panel-primary{
+	border-color:#dfd7ca;
+}
+
+a.panel-heading{
+	display:block;
+}
+
+.songs-list{
+	width:100%;
+	overflow-y: scroll;
+	height:300px;
+}
+
+.songNo {
+	display: inline-block;
+	margin:0 10px;
+}
+
+.song {
+	padding: 10px 15px;
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding:0;
+  }
+  .song-title{
+  	border-radius:0;
+  }
+  .volume {
+	left:85%;
+  }
+}
